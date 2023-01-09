@@ -1,0 +1,352 @@
+// here are some programs of matrixes
+
+#include <stdio.h>
+
+int main()
+{
+    int n;
+    scanf("%d",&n);int a[n][n];int b[n][n];int c[n][n];
+    for (int i=0;i<n;i++){
+        for (int j=0;j<n;j++){
+            scanf("%d",&a[i][j]);
+        }
+    }printf("this is the very first matrix\n");
+    for (int i=0;i<n;i++){
+        for (int j=0;j<n;j++){
+            printf("%d",a[i][j]);
+        }
+        printf("\n");}
+        for (int i=0;i<n;i++){
+            for (int j=0;j<n;j++){
+                scanf("%d",&b[i][j]);
+            }
+        }printf("this is the second matrix to be added in first\n");
+        for (int i=0;i<n;i++){
+        for (int j=0;j<n;j++){
+            printf("%d",b[i][j]);
+        }printf("\n");}
+        for (int i=0;i<n;i++){
+            for (int j=0;j<n;j++){
+                c[i][j]=a[i][j]+b[i][j];
+            }
+        }printf("the new matrix looks like it \n");
+        for (int i=0;i<n;i++){
+        for (int j=0;j<n;j++){
+            printf("%d",c[i][j]);
+        }printf("\n");}
+}
+
+#include <stdio.h>
+
+int main()
+{
+    int n;
+    scanf("%d",&n);int a[n][n];int b[n][n];int c[n][n];
+    for (int i=0;i<n;i++){
+        for (int j=0;j<n;j++){
+            scanf("%d",&a[i][j]);
+        }
+    }printf("this is the very first matrix\n");
+    for (int i=0;i<n;i++){
+        for (int j=0;j<n;j++){
+            printf("%d",a[i][j]);
+        }
+        printf("\n");}
+        for (int i=0;i<n;i++){
+            for (int j=0;j<n;j++){
+                scanf("%d",&b[i][j]);
+            }
+        }printf("this is the second matrix to be added in first\n");
+        for (int i=0;i<n;i++){
+        for (int j=0;j<n;j++){
+            printf("%d",b[i][j]);
+        }printf("\n");}
+        for (int i=0;i<n;i++){
+            for (int j=0;j<n;j++){
+                c[i][j]=a[i][j]-b[i][j];
+            }
+        }printf("the new matrix looks like it \n");
+        for (int i=0;i<n;i++){
+        for (int j=0;j<n;j++){
+            printf("%d",c[i][j]);
+        }printf("\n");}
+}
+
+
+#include <stdio.h>
+
+int main()
+{
+    int n;
+    scanf("%d",&n);int a[n][n];int b[n][n];int c[n][n];int sum=0;
+    for (int i=0;i<n;i++){
+        for (int j=0;j<n;j++){
+            scanf("%d",&a[i][j]);
+        }
+    }printf("this is the very first matrix\n");
+    for (int i=0;i<n;i++){
+        for (int j=0;j<n;j++){
+            printf("%d",a[i][j]);
+        }
+        printf("\n");}
+        for (int i=0;i<n;i++){
+            for (int j=0;j<n;j++){
+                scanf("%d",&b[i][j]);
+            }
+        }printf("this is the second matrix to be multiplied in first\n");
+        for (int i=0;i<n;i++){
+        for (int j=0;j<n;j++){
+            printf("%d",b[i][j]);
+        }printf("\n");}
+        for (int i=0;i<n;i++){
+            for (int j=0;j<n;j++){
+                for (int k=0;k<n;k++){
+                sum=sum+a[i][k]*a[j][k];
+                   
+                }c[i][j]=sum;
+            }
+        }
+         for (int i=0;i<n;i++){
+        for (int j=0;j<n;j++){
+            printf("%d",c[i][j]);
+        }
+        printf("\n");}
+        
+}
+
+
+
+#include <stdio.h>
+
+int main()
+{
+    int n;int m;
+    scanf("%d%d",&n,&m);int a[n][m];
+    for (int i=0;i<n;i++){
+        for (int j=0;j<m;j++){
+            scanf("%d",&a[i][j]);
+        }
+    }printf("this is the very first matrix\n");
+    for (int i=0;i<n;i++){
+        for (int j=0;j<m;j++){
+            printf("%d",a[i][j]);
+        }
+        printf("\n");}int sum=0;
+for(int i=0;i<n;i++){
+    for (int j=0;j<m;j++){
+        if (i==j)
+        sum=sum+a[i][j];
+    }
+
+}
+printf("sum of main diagonal is %d",sum);
+        
+}
+
+
+#include <stdio.h>
+int main(){
+    int n;
+    scanf("%d",&n);int a[n][n];
+    for (int i=0;i<n;i++){
+        for (int j=0;j<n;j++){
+            scanf("%d",&a[i][j]);
+        }
+    }
+    for (int i=0;i<n;i++){
+        for (int j=0;j<n;j++){
+            if (i<=j)
+            printf("%d",a[i][j]);
+            else 
+            printf(" ");
+        }printf("\n");
+    }
+    return 0;
+    
+}
+
+
+#include <stdio.h>
+int main(){
+    int n;
+    scanf("%d",&n);int a[n][n];
+    for (int i=0;i<n;i++){
+        for (int j=0;j<n;j++){
+            scanf("%d",&a[i][j]);
+        }
+    }
+    for (int i=0;i<n;i++){
+        for (int j=0;j<n;j++){
+            if (i>=j)
+            printf("%d",a[i][j]);
+            else 
+            printf(" ");
+        }printf("\n");
+    }
+    return 0;
+    
+}
+
+
+#include <stdio.h>
+int main(){
+    int n;
+    scanf("%d",&n);int a[n][n];
+    for (int i=0;i<n;i++){
+        for (int j=0;j<n;j++){
+            scanf("%d",&a[i][j]);
+        }
+    }int sum=0;
+    for (int i=0;i<n;i++){
+        for (int j=0;j<n;j++){
+            if (i>=j)
+           sum=sum+a[i][j];
+           
+        }
+       
+        
+    }printf("%d",sum);
+    return 0;
+    
+}
+
+
+#include <stdio.h>
+int main(){
+    int n;
+    scanf("%d",&n);int a[n][n];int b[n][n];
+    for (int i=0;i<n;i++){
+        for (int j=0;j<n;j++){
+            scanf("%d",&a[i][j]);
+        }
+    }
+    for (int i=0;i<n;i++){
+        for (int j=0;j<n;j++){
+    b[j][i]=a[i][j];
+        }}
+        int flag=1;
+for (int i=0;i<n;i++){
+        for (int j=0;j<n;j++){
+            printf("%d",b[i][j]);
+        }printf("\n");}
+    return 0;
+    
+}
+
+
+#include <stdio.h>
+int main(){
+    int n;
+    scanf("%d",&n);int a[n][n];int b[n][n];
+    for (int i=0;i<n;i++){
+        for (int j=0;j<n;j++){
+            scanf("%d",&a[i][j]);
+        }
+    }
+    for (int i=0;i<n;i++){
+        for (int j=0;j<n;j++){
+    b[j][i]=a[i][j];
+        }}
+       int f=0;
+for (int i=0;i<n;i++){
+        for (int j=0;j<n;j++){
+           if (a[i][j]!=b[i][j]){
+               f++;
+}
+        }
+    
+}
+if (f>0)
+printf("not symmetric");
+else 
+printf("symmetric");
+      
+    return 0;
+    
+}
+
+#include<stdio.h>
+
+int main()
+{
+ int n;
+ scanf("%d",&n);
+ int a[n];
+ for (int i=0;i<n;i++){
+     scanf("%d",&a[i]);
+     }
+ int pos;
+ printf("enter the pos for the element u wanna delete \n");
+ scanf("%d",&pos);
+ for (int i=pos;i<n-1;i++){
+     a[i]=a[i+1];
+ }n--;
+ for (int i=0;i<n;i++){
+     printf("%d",a[i]);
+ }
+    return 0;
+}
+
+#include <stdio.h>
+
+int main()
+{
+   int n;
+   scanf("%d",&n);
+   int a[n];
+   for (int i=0;i<n;i++)
+  scanf("%d",&a[i]);
+  int b[n],v=-1,c=0;
+  for (int i=0;i<n;i++){
+  c=1;
+  if (a[i]!=v){
+      for (int j=i+1;j<n;j++){
+          if (a[i]==a[j]){
+              c++;
+              a[j]=v;
+          }
+      }
+      b[i]=c;
+  }}
+  for (int i=0;i<n;i++){
+      if (a[i]!=v)
+      printf("%d %d\n",a[i],b[i]);
+  }
+  
+    
+}
+
+#include <stdio.h>
+int main()
+{
+   int n;
+   scanf("%d",&n);
+  int a[n][n];
+  for (int i=0;i<n;i++){
+      for (int j=0;j<n;j++){
+          scanf("%d",&a[i][j]);
+      }
+  }int temp=0;
+  for (int i=0;i<n;i++){
+      for (int j=0;j<n;j++){
+          if(i==j){
+              temp=a[i][j];
+              a[i][j]=a[i][n-1-j];
+              a[i][n-1-j]=temp;
+          }
+      }
+  }
+  for (int i=0;i<n;i++){
+      for (int j=0;j<n;j++){
+          printf("%d",a[i][j]);
+      }printf("\n");
+  }
+}
+
+
+
+
+
+
+
+
